@@ -20,7 +20,7 @@ def main():
     while 1: # Основной цикл программы
         for e in tkinter.event.get(): # Обрабатываем события
             if e.type == QUIT:
-                raise SystemExit, "QUIT" 
+                raise SystemExit, "QUIT" # Не, даже с пигеймом не работает. Синтакс эрор. И что с этим делать?
         screen.blit(bg, (0,0))      # Каждую итерацию необходимо всё перерисовывать 
         tkinter.display.update()     # обновление и вывод всех изменений на экран
         
